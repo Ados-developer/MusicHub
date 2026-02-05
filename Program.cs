@@ -48,23 +48,11 @@ namespace MusicHub
 
             var services = host.Services;
             Application.Run(new MusicHubAppContext(services));
-            //using (var scope = host.Services.CreateScope())
-            //{
-            //    var db = scope.ServiceProvider.GetRequiredService<MusicHubDbContext>();
-            //    db.Database.Migrate();
-            //}
-
-            //while (true)
-            //{
-            //    LoginForm? loginForm = host.Services.GetRequiredService<LoginForm>();
-            //    if (loginForm.ShowDialog() != DialogResult.OK)
-            //    {
-            //        return;
-            //    }
-            //    MusicHub? form = host.Services.GetRequiredService<MusicHub>();
-            //    Application.Run(form);
-            //}
-
+            using (var scope = host.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<MusicHubDbContext>();
+                db.Database.Migrate();
+            }
         }
     }
 }
