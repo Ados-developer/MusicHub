@@ -24,10 +24,13 @@ It allows users to browse and manage artists, albums, and songs with a modern cu
   git clone https://github.com/Ados-developer/MusicHub.git
   cd MusicHub
   ```
+
   2.Restore NuGet packages
   - In Visual Studio: Tools → NuGet Package Manager → Restore Packages
+
   3.Build the project
   - Open MusicHub.sln in Visual Studio → Rebuild Solution
+
   4.Run the application
   -Login screen appears first.
   -Use credentials stored in Data/MusicHubDbContext (or add new users via seed/migrations).
