@@ -16,7 +16,7 @@ It allows users to browse and manage artists, albums, and songs with a modern cu
   - Visual Studio Community 2026
 
 ## Login Information
-  -The login credentials are stored in the database at Data/MusicHubDbContext.
+  - The login credentials are stored in the database at Data/MusicHubDbContext.
 
 ## 🚀 How to Run the Project
   1. Clone the repository
@@ -32,6 +32,6 @@ It allows users to browse and manage artists, albums, and songs with a modern cu
   - Open MusicHub.sln in Visual Studio → Rebuild Solution
 
   4.Run the application
-  -Login screen appears first.
-  -Use credentials stored in Data/MusicHubDbContext (or add new users via seed/migrations).
-  -After login, the main MusicHub interface opens.
+  - Login screen appears first.
+  - Use credentials stored in Data/MusicHubDbContext (or add new users via seed/migrations).
+  - After login, the main MusicHub interface opens.
